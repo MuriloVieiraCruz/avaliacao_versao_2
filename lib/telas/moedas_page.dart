@@ -23,7 +23,7 @@ class _MoedasPageState extends State<MoedasPage> {
   Completo completo = Completo.inicio();
 
   buscarAPI() async {
-    String urlHgBrasil = 'https://api.hgbrasil.com/finance?key=0811678f&format=json-cors';
+    String urlHgBrasil = 'https://api.hgbrasil.com/finance?key=029a9e63&format=json-cors';
     Response resposta = await get (Uri.parse(urlHgBrasil));
     Map resultado = json.decode(resposta.body);
 

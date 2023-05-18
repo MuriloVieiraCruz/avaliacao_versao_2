@@ -26,7 +26,7 @@ class ItemComponent extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  '${item?.valor}',
+                  '${item?.valor.toStringAsFixed(3)}',
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
@@ -44,7 +44,7 @@ class ItemComponent extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(10),
                       child: Text(
-                        '${item?.variavel}',
+                        '${item?.variavel.toStringAsFixed(3)}',
                         style: const TextStyle(color: Colors.white),
                       ),
                     ),
